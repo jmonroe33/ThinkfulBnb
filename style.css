@@ -149,9 +149,7 @@ footer p {
 
 /* -------  Media Query ------- */
 @media all and (min-width:480px) {
-  .logo {
-    text-align: left;
-  }
+  
 
  header nav ul li {
   padding:0 8px;
@@ -176,9 +174,7 @@ footer p {
  #stay .select{
   width: 100%;
  }
- #stay button a {
-  
- }
+
  #stay button {
   padding:10px 20px;
   font-size:20px;
@@ -186,22 +182,21 @@ footer p {
  
 
  /*-------About-------*/
- #about .about-inner-content {
-  /* text-align: center; */
- }
+
  #about .about-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
  }
-#about img {
-  
+
 
 }
 
-}
 @media all and (min-width:800px) {
+  .logo {
+    text-align: left;
+  }
   header {
 display: flex;
   justify-content: space-between ;
