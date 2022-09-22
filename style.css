@@ -32,6 +32,7 @@ section.alternate-background {
 
 main img {
   width: 100px;
+  height: auto;
 }
 
 /* ---  Groups & Items --- */
@@ -56,9 +57,7 @@ div img{
  #host img{
   width:100%;
 }
-#about img{
-  width:100%;
-}
+
 /* -------  Navigation ------- */
 
 header {
@@ -95,16 +94,22 @@ header nav ul{
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  margin: 10px;
 }
 
 form label {
   font-weight: bold;
 }
+form div{
+ display:flex;
+ justify-content: space-between;
+ width: 100%;
 
+}
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 50%;
 }
 
 form button {
@@ -116,15 +121,19 @@ form button {
   width: 100%;
 }
 
-#about img{
-  padding:20px 0;
 
-}
 
 #ideas .invis-mobile {
 display:none;
 }
+/*----about----*/
+#about img{
+  padding:5px 0;
 
+}
+#about img{
+  width:100%;
+}
 /* -------  Footer ------- */
 
 footer {
@@ -146,15 +155,23 @@ footer p {
   display: flex;
   justify-content: space-between ;
   align-items: center;
+  
  }
  header nav ul li {
   padding:0 8px;
  }
  /* stay form */
+ form input{
+  width: 100%;
+ }
+ form div{
+  padding:10px;
+  width: 20%;
+ }
  #stay form {
   display:flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  
   padding: 0 10px;
  }
  #stay label {
@@ -176,26 +193,42 @@ footer p {
 
  /*-------About-------*/
  #about .about-inner-content {
-  text-align: center;
+  /* text-align: center; */
+ }
+ #about .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
  }
 #about img {
-  width: 250px;
-  padding: 30px;
+  
+
 }
+
 }
 @media all and (min-width:800px) {
+  form div{
+    padding:10px;
+    width: 20%;
+  }
 #about {
   padding: 30px;
 }
 #about .about-inner-content {
  display: flex;
- width: 100%;
- justify-content: space-evenly;
- align-items: center;
+ justify-content:flex-start ;
  flex-direction:row;
+ align-items:center
  }
+ .padding {
+  margin: 10px;
+ }
+
+ 
  #about p {
-  width: 50%;
+  width: 100%;
+  padding:10px;
  }
  #about img {
   padding:10px;
